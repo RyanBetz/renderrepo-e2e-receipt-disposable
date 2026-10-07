@@ -1,0 +1,8 @@
+{
+  "name": "renderrepo-e2e-receipt-disposable",
+  "private": true,
+  "description": "Disposable RenderRepo end-to-end proof. Safe to delete.",
+  "scripts": {
+    "test": "node --experimental-strip-types --test src/checkout/complete.test.ts"
+  }
+}
