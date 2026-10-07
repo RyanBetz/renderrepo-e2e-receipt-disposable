@@ -7,6 +7,5 @@ export async function completeCheckout(order: { id: string; amount: number }): P
   if (!payment.ok) {
     throw new Error("payment failed");
   }
-  await sendReceiptEmail(order);
   return order;
 }
