@@ -8,5 +8,6 @@ export async function completeCheckout(order: { id: string; amount: number }): P
     throw new Error("payment failed");
   }
   // Checkout can finish while the receipt email stays removed.
+  // Release proof keeps this path from sending a receipt.
   return order;
 }
